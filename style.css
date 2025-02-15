@@ -39,6 +39,19 @@ body {
     background-color: #666;
 }
 
+@media (max-width: 800px) {
+    .denomination-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .denomination-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
 .value {
     font-size: 1.2em;
     margin-bottom: 4px;
@@ -75,4 +88,22 @@ body {
 
 .animate-count {
     animation: countUp 0.3s cubic-bezier(.18,.89,.32,1.28)
+}
+
+#total-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#export-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#export-btn svg {
+    width: 30px;
+    height: 30px;
+    fill: white;
 }

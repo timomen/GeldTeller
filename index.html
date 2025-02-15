@@ -6,11 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GeldTeller</title>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <p id="total">€0.00</p>
+    <div id="total-container">
+        <p id="total" title="Totaal">€0.00</p>
+        <button id="export-btn" title="Exporteren">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 96 960 960" width="24" fill="white">
+                <path d="M480 776 280 576l57-57 103 103V336h80v286l103-103 57 57-200 200Zm-200 200q-33 0-56.5-23.5T200 896V656h80v240h400V656h80v240q0 33-23.5 56.5T680 976H280Z"/>
+            </svg>
+        </button>
+    </div>
     <div class="denomination-grid">
         <div class="denomination-box">
             <div class="value">€0.05</div>
